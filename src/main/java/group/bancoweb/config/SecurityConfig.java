@@ -68,7 +68,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         //Puertos por defecto del servidor de vite
-        configuration.setAllowedOrigins(List.of("http://localhost:5174","http://localhost:5173"));
+        configuration.setAllowedOrigins(List.of("http://localhost:5174","http://localhost:5173","https://banco-web-app-frontend-n2luhp2hs-drm14.vercel.app"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
